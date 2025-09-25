@@ -1,0 +1,23 @@
+{
+  "name": "cis-486-quebec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llemoine1230/CIS-486-QUEBEC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llemoine1230/CIS-486-QUEBEC/issues"
+  },
+  "homepage": "https://github.com/llemoine1230/CIS-486-QUEBEC#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
