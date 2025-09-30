@@ -1,10 +1,10 @@
 {
   "name": "cis-486-quebec",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.mjs"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/llemoine1230/CIS-486-QUEBEC#readme",
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "nodemon": "^3.1.10"
+  },
+  "description": ""
 }
