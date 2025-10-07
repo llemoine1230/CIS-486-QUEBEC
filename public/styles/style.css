@@ -1,180 +1,167 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 body {
-   font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"),
-    /*  new code! Added gradient to svg background and fixed it to where it stretches across whole page   */
-      linear-gradient(#ffccff, #ccccff, #ffff99);
-  background-blend-mode: multiply, normal;
-  background-attachment: fixed;
-  margin: 20px;
-  padding: 50px;
-  color: Black;
-}
-h1 {
-  color: #ccccff;
-  text-align: center;
-  font-size: 50px;
-/*    New code! Apply a shadow effect to text to make it stand out better on page  */ 
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}
-p {
-  color: #ffffcc;
-  text-align: center;
-  font-size: 30px;
-   font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  /*   new code! Apply a shadow effect to text to make it stand out better on page   */
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-  /*   new code! */
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-blend-mode: multiply, normal;
 }
 
-div.form{
-   /*   new code! Centered form using a <div>  */
-    display: block;
-    text-align: center;
-}
-form{
-   /*   new code! Centered form   */
+.editable-field {
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  /*   new code! Apply a shadow effect to text to make it stand out better on page   */
-   text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+    min-width: 100px;
+    border: 1px solid transparent;
 }
-  label {
-       color: #ffffcc;
-    font-size: 20px;
-    
-}
-.dateLog {/* new code! changed how the form looked: Made it more opaque, added rounded edges, changed sizing   */
-  background: rgba(255, 255, 255, 0.6);
-  height: 100px;
-  width: 450px;
-  padding: 0 10px 0 45px;
-  font-size: 20px;
-   font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  border: none;
-  border-radius: 30px;
-}
-.readingInput {/* new code! changed how the form looked: Made it more opaque, added rounded edges, changed sizing   */
-  background: rgba(255, 255, 255, 0.6);
-  
-  height: 100px;
-  width: 450px;
-  padding: 0 10px 0 45px;
-   font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  border: none;
-  border-radius: 30px;
-}
-.form-control {/* new code! changed how the text area looked: Made it more opaque, added rounded edges, changed sizing   */
-  background: rgba(255, 255, 255, 0.6);
-  
-  height: 100px;
-  width: 450px;
-  padding: 0 10px 0 40px;
-   font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  border: none;
-  border-radius: 30px;
-}
-#saveReadingData {/* new code! Made button have a linear gradient, though still using bootstrap to make it change color when hovered over*/
-   font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: linear-gradient(to right, #ffccff, #ccccff, #ffff99);
-  margin: 10px;
 
+.editable-field:hover {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
 }
-.readingUl {
-  color: #CCCCFF;
-  font-size: 20px;
-  /*  New code! Apply a shadow effect to text to make it stand out better on page  */
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-  width: 100%; 
-  /*  new code: made list background more opaque and added rounded edges.  */
-  background: rgba(255, 255, 255, 0.6);
-  
-  height: 200px;
-  width: 512px;
-  padding: 0 10px 0 45px;
-  border: none;
-  border-radius: 30px;
-  }
-div.readingLog {
-/*  new code: centered list using a <div>  */
-  text-align: center;
+
+.editing {
+    background-color: #fff3cd !important;
+    border-color: #fff3cd !important;
 }
-ul.readingUl {
-/*  new code: centered list  */
-  display: inline-block;
-  text-align: left;
+
+.assignment-card {
+    transition: all 0.2s;
 }
-a {
- margin-right: 10px;  
+
+.assignment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.spotify {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+
+.click-hint {
+    font-size: 0.8em;
+    color: #6c757d;
+    font-style: italic;
 }
-.modal-content {
-  border-radius: 20px;
-  background: linear-gradient(#ffccff, #ccccff, #ffff99);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+.save-indicator {
+    opacity: 0;
+    transition: opacity 0.3s;
 }
-#clickLogin{
-  font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: linear-gradient(to right, #ffccff, #ccccff, #ffff99);
-  margin: 10px;
-  color: Black;
-  display: block;
-  margin: 10px auto;
+
+.save-indicator.show {
+    opacity: 1;
 }
-#submitCred{
-  font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: linear-gradient(to right, #ffccff, #ccccff, #ffff99);
-  margin: 10px;
-  color: Black;
+
+body {
+    background: linear-gradient(#ffccff, #ccccff, #ffff99);
+    min-height: 100vh;
 }
-#navId{
-  font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: linear-gradient(to right,  #ffff99,#ccccff,  #ee9eee, #ccccff, #ffff99);
-  margin: 10px;
-  font-size: 20px;
-  color: Black;
-  padding: 0 10px 0 40px;
-  border: none;
-  border-radius: 30px; 
+
+/* Bootstrap button color overrides */
+.btn-success,
+.btn-success:focus {
+    background-color: #89b475 !important;
+    border-color: #89b475 !important;
+    color: #fff !important;
 }
-#footer{
-  font-family: "Delius", serif;
-  font-weight: 400;
-  font-style: normal;
-  background-image: linear-gradient(to right,  #ffff99,#ccccff,  #ee9eee, #ccccff, #ffff99);
-  margin: 10px;
-  font-size: 20px;
-  color: Black;
-  padding: 0 10px 0 40px;
-  border: none;
-  border-radius: 30px;
+
+.btn-success:hover,
+.btn-success:active {
+    background-color: #73b455 !important;
+    border-color: #73b455 !important;
+    color: #fff !important;
+}
+
+.btn-danger,
+.btn-danger:focus {
+    background-color: #feb1ef !important;
+    border-color: #feb1ef !important;
+    color: #fff !important;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+    background-color: #ff7ae4 !important;
+    border-color: #ff7ae4 !important;
+    color: #fff !important;
+}
+
+.btn-light,
+.btn-light:focus {
+    background-color: #f5f7fa !important;
+    border-color: #e3e6f0 !important;
+    color: #000000 !important;
+}
+
+.btn-light:hover,
+.btn-light:active {
+    background-color: #e3eaff !important;
+    border-color: #b5c7f7 !important;
+    color: #000000 !important;
+}
+
+.btn-outline-danger,
+.btn-outline-danger:focus {
+    background-color: #e7ecfa !important;
+    color: #dba9ff !important;
+    border: 1px solid #bfc9d9 !important;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:active {
+    background-color: #d3dbf7 !important;
+    color: #b71c1c !important;
+}
+
+/* Database Management card custom color */
+.card.bg-primary,
+.bg-primary {
+    background-color: #fef5b6 !important;
+    color: #ffee7c !important;
+    border: none !important;
+}
+
+.card.bg-primary .card-title,
+.bg-primary .card-title {
+    color: #23304a !important;
+}
+
+
+.card-header.bg-info,
+.bg-info {
+  background-color: #fffbbd !important;
+  color: #23304a !important;
+  border: none !important;
+}
+.card-header.bg-info .card-title,
+.bg-info .card-title {
+  color: #23304a !important;
+}
+
+/* Add New Assignment card header color override */
+.card-header.bg-success,
+.bg-success {
+  background-color: #fffbbd !important;
+  color: #fffbbd !important;
+  border: none !important;
+}
+.card-header.bg-success .card-title,
+.bg-success .card-title {
+  color: #fffbbd !important;
+}
+
+.container-header h1 {
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #fffbbd;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+}
+
+.container-header p {
+    color: #d6a8fd !important;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+
 }
