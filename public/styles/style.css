@@ -112,6 +112,20 @@ body {
     color: #b71c1c !important;
 }
 
+/* Make the Login button (btn-primary) use the same green as Register (btn-success) */
+.btn-primary,
+.btn-primary:focus {
+    background-color: #89b475 !important;
+    border-color: #89b475 !important;
+    color: #fff !important;
+}
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #73b455 !important;
+    border-color: #73b455 !important;
+    color: #fff !important;
+}
+
 /* Database Management card custom color */
 .card.bg-primary,
 .bg-primary {
@@ -125,7 +139,6 @@ body {
     color: #23304a !important;
 }
 
-
 .card-header.bg-info,
 .bg-info {
   background-color: #fffbbd !important;
@@ -137,11 +150,10 @@ body {
   color: #23304a !important;
 }
 
-/* Add New Assignment card header color override */
 .card-header.bg-success,
 .bg-success {
   background-color: #fffbbd !important;
-  color: #fffbbd !important;
+  color: #000000 !important;
   border: none !important;
 }
 .card-header.bg-success .card-title,
@@ -149,19 +161,27 @@ body {
   color: #fffbbd !important;
 }
 
-.container-header h1 {
+.card-header.bg-primary,
+.bg-primary {
+  background-color: #b3cfff !important;
+  color: #000 !important;
+  border: none !important;
+}
+.card-header.bg-primary .card-title,
+.bg-primary .card-title,
+.card-header.bg-primary h5,
+.bg-primary h5 {
+  color: #000 !important;
+}
+
+.container-header h1,
+.container-header-title {
     letter-spacing: 1px;
     margin-bottom: 10px;
     color: #fffbbd;
     text-align: center;
     font-size: 50px;
     text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-}
-
-.container-header p {
-    color: #d6a8fd !important;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-
+    font-family: "Delius", serif;
+    font-weight: 400;
 }

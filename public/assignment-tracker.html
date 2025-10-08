@@ -14,9 +14,10 @@
 <body>
     <div class="container mt-5">
         <div class="row mb-4">
-            <div class="col-12 container-header">
-                <h1 class="text-center mb-3">Assignment Tracker</h1>
-                <p class="text-center text-muted">Click on any field to edit directly</p>
+            <div class="col-12 container-header d-flex justify-content-between align-items-center">
+                <div></div>
+                <h1 class="text-center mb-3 flex-grow-1">Assignment Tracker</h1>
+                <button id="logoutBtn" class="btn btn-outline-danger ms-2" style="min-width:100px;">Logout</button>
             </div>
         </div>
         <!-- Database Management Section -->
@@ -451,6 +452,13 @@
                 showMessage(`❌ Network error: ${error.message}`, 'danger');
             }
         }
+
+        // Logout handler
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('jwtToken');
+            localStorage.removeItem('username');
+            window.location.href = "auth.html";
+        });
 
         // Load assignments when page loads
         window.addEventListener('load', loadAssignments);
